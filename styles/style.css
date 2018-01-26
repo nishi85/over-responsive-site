@@ -137,9 +137,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
@@ -195,8 +192,65 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 .shop-menu-item {
   margin-left: 25px; }
 
-footer {
-  background: blue; }
+.footer-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.over-info {
+  width: 39.9145%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.over-info-logo {
+  width: 25.6859%; }
+
+.footer-nav-social {
+  width: 50.5353%; }
+
+.footer-nav-social-menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-left: 0;
+  list-style: none; }
+
+.footer-nav-social-menu .fa {
+  color: black; }
+
+.footer-item-services {
+  width: 12.9914%; }
+
+.footer-item-account {
+  width: 13.5897%; }
+
+.footer-item-menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 0;
+  list-style: none; }
+
+.footer-item-instagram {
+  width: 23.0769%; }
 
 .slider {
   display: -webkit-box;
@@ -318,6 +372,214 @@ footer {
 .plants-containers {
   width: 100%;
   position: relative; }
+
+.popular-products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid green; }
+
+.products-filter {
+  width: 38.5897%; }
+
+.products-filter ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid red;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-left: 0; }
+
+.products-filter ul li {
+  list-style: none; }
+
+.product-gallery {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.product {
+  width: 17.9487%;
+  border: 1px solid red;
+  text-align: center; }
+
+.product-overlay {
+  display: none; }
+
+.testimonials-video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
+
+.testimonials,
+.video {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 80vh; }
+
+.quote {
+  width: 5.7291%; }
+
+.testimonial-bullets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 28.0625%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.testimonial-bullet {
+  width: 20.316%;
+  border-radius: 50%;
+  background-color: #888890;
+  height: 40px; }
+
+.video {
+  background-color: rgba(26, 26, 38, 0.5); }
+
+.eclipse {
+  border-radius: 50%;
+  background-color: rgba(255, 154, 158, 0.3);
+  width: 100px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.red-cirle {
+  border-radius: 50%;
+  background-color: #f07f84;
+  width: 80px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.fa {
+  color: white;
+  color: #ffffff;
+  font-size: 24px;
+  /* Approximation due to font substitution */
+  font-weight: 400; }
+
+.video-text {
+  width: 49.5833%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid blue;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.video-text-img {
+  width: 26.4705%;
+  border: 1px solid green; }
+
+.blog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 1px solid green;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.blog-gallery {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.blog-entry {
+  width: 31.6239%; }
+
+.subscribe {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+form {
+  width: 71.7948%;
+  border: 1px solid green; }
+
+[type=email] {
+  width: 100%; }
+
+.partners {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.partner {
+  width: 11.5384%; }
 
 img {
   width: 100%;

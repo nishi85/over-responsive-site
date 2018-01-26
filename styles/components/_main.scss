@@ -56,3 +56,176 @@
     width: 100%;
     position: relative;
 }
+
+// POPULAR PRODUCTS
+
+.popular-products {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid green;
+}
+
+.products-filter {
+    width: 38.5897%;
+}
+
+.products-filter ul {
+    width: 100%;
+    display: flex;
+    border: 1px solid red;
+    justify-content: space-between;
+    padding-left: 0;
+}
+
+.products-filter ul li {
+    list-style: none;
+}
+
+.product-gallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product {
+    width: 17.9487%;
+    border: 1px solid red;
+    text-align: center;
+}
+
+.product-overlay {
+    display: none;
+}
+
+// TESTIMONIALS + VIDEOS
+.testimonials-video {
+    display: flex;
+    width: 100%;
+}
+
+// TESTIMONIALS
+.testimonials,
+.video {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.quote {
+    width: 5.7291%;
+}
+
+.testimonial-bullets {
+    display: flex;
+    width: 28.0625%;
+    justify-content: space-between;
+}
+
+.testimonial-bullet {
+    width: 20.316%;
+    border-radius: 50%;
+    background-color:  #888890;
+    height: 40px;
+}
+
+.video {
+    background-color:  rgba(26, 26, 38, 0.5);
+}
+
+.eclipse {
+    border-radius: 50%;
+    background-color:  rgba(255, 154, 158, 0.3);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.red-cirle {
+    border-radius: 50%;
+    background-color:  #f07f84;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa {
+    color: white;
+    color:  #ffffff;
+    font-size: 24px;/* Approximation due to font substitution */
+    font-weight: 400;
+}
+
+.video-text {
+    width: 49.5833%;
+    display: flex;
+    border: 1px solid blue;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.video-text-img {
+    width: 26.4705%;
+    border: 1px solid green;
+}
+
+// BLOG
+
+.blog {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    // align-items: center;
+    border: 1px solid green;
+    flex-wrap: wrap;
+}
+
+.blog-gallery {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-entry {
+    width: 31.6239%;
+}
+
+//NEWSLETTER
+
+.subscribe {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form   {
+    width: 71.7948%;
+    border: 1px solid green;
+}
+
+[type=email] {
+    width: 100%;
+}
+
+.partners {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.partner {
+    width: 11.5384%;
+
+}
