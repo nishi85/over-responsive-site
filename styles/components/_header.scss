@@ -1,4 +1,52 @@
-header {
-    width: 90%;
+.nav-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.nav-menu {
+    display: flex;
+    width:33.3333%;
+    justify-content: space-between;
+    padding: 0;
+    border: 1px solid red;
+}
+
+.nav-header li {
+    list-style: none;
+}
+
+.nav-header li a {
+    text-decoration: none;
+}
+
+.logo {
+    width: 33.3333%;
+    height: 28px;
+    border: 1px solid green;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-img {
+    width: 30.7692%;
+}
+
+.shop-menu {
+    width: 33.3333%;
+    display: flex;
+    border: 1px solid green;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.shop-menu-item {
+    width: 24px;
+    height: 24px;
+}
+
+.shop-menu-item {
+    margin-left: 25px;
+
+}

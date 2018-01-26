@@ -1,0 +1,58 @@
+// INTRO
+
+.intro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.intro-title {
+    background-image: url("../assets/plant.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+// CATEGORIES
+
+.categories-gallery {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.plants-air {
+    width: 40.1709%;
+    position: relative;
+}
+
+.plant-text {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    border: 1px solid black;
+    background: white;
+    transform:translate(-50%, -50%);
+}
+
+.plants-side {
+    width: 57.2649%;
+    border: 1px solid green;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.plants-office,
+.plants-house {
+    width: 47.7611%;
+    position: relative;
+}
+
+.plants-containers {
+    width: 100%;
+    position: relative;
+}
