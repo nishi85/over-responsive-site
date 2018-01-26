@@ -1,3 +1,8 @@
+footer {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
 .footer-top {
     display: flex;
     width: 100%;
@@ -48,5 +53,38 @@
 
 .footer-item-instagram {
     width: 23.0769%;
+    display: flex;
+    border: 1px solid red;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+.footer-item-gallery {
+    width: 100%;
+    display: flex;
+    border: 1px solid green;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-item-gallery-img {
+    width: 31.1111%;
+}
+
+.footer-payment-gallery {
+    width: 85.9259%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 14.6551%;
+    
+}
+
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

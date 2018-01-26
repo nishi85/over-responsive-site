@@ -192,6 +192,10 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 .shop-menu-item {
   margin-left: 25px; }
 
+footer {
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey; }
+
 .footer-top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -250,7 +254,55 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   list-style: none; }
 
 .footer-item-instagram {
-  width: 23.0769%; }
+  width: 23.0769%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid red;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.footer-item-gallery {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid green;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.footer-item-gallery-img {
+  width: 31.1111%; }
+
+.footer-payment-gallery {
+  width: 85.9259%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.card {
+  width: 14.6551%; }
+
+.footer-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
 
 .slider {
   display: -webkit-box;
