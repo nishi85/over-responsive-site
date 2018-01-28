@@ -7,6 +7,7 @@ footer {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    align-items: baseline;
 }
 
 .over-info {
@@ -86,5 +87,4 @@ footer {
 .footer-bottom {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }

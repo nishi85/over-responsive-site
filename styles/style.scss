@@ -7,6 +7,10 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 @import "components/slider";
 @import "components/main";
 
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 img {
     width: 100%;
     display: block;

@@ -18,6 +18,14 @@
 
 .nav-header li a {
     text-decoration: none;
+    text-transform: uppercase;
+    color:  #1a1a26;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.nav-header li a:hover {
+    color: #888890;
 }
 
 .logo {
@@ -43,9 +51,26 @@
 .shop-menu-item {
     width: 24px;
     height: 24px;
+    margin-left: 25px;
 }
 
-.shop-menu-item {
-    margin-left: 25px;
+.shop-bag {
+    position: relative;
+}
 
+.shop-menu-eclipse {
+    border-radius: 50%;
+    background-color:  #a8edea;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    // color:  #1a1a26;
+    font-size: 8px;
+    top: -5px;
+    right: -10px;
+    text-align: center;
+}
+
+.shop-menu-eclipse p {
+    margin: 3px auto auto;
 }
