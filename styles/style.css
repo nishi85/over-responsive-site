@@ -215,8 +215,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   margin: 3px auto auto; }
 
 footer {
-  border-top: 1px solid grey;
-  border-bottom: 1px solid grey; }
+  border-top: 1px solid #e6e5e1;
+  border-bottom: 1px solid #e6e5e1; }
 
 .footer-top {
   display: -webkit-box;
@@ -241,7 +241,24 @@ footer {
   flex-direction: column; }
 
 .over-info-logo {
-  width: 25.6859%; }
+  width: 25.6859%;
+  margin-bottom: 19.9167px; }
+
+.over-info-p {
+  color: #888890;
+  font-size: 14px;
+  font-weight: 400; }
+
+.footer-contact {
+  color: #1a1a26;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 5px 0; }
+
+.footer-contact span {
+  color: #888890;
+  font-size: 14px;
+  font-weight: 400; }
 
 .footer-nav-social {
   width: 50.5353%; }
@@ -258,13 +275,26 @@ footer {
   list-style: none; }
 
 .footer-nav-social-menu .fa {
-  color: black; }
+  color: #1a1a26; }
+
+.footer-nav-social-menu .fa:hover {
+  color: #888890; }
+
+.footer-item-title {
+  color: #1a1a26;
+  font-size: 24px;
+  font-weight: 400; }
+
+.footer-item-title span {
+  display: block;
+  border-bottom: 2px solid  #a8edea;
+  width: 40px; }
 
 .footer-item-services {
-  width: 12.9914%; }
+  width: 14.9914%; }
 
 .footer-item-account {
-  width: 13.5897%; }
+  width: 14.5897%; }
 
 .footer-item-menu {
   width: 100%;
@@ -277,6 +307,13 @@ footer {
   flex-direction: column;
   padding-left: 0;
   list-style: none; }
+
+.footer-item-menu li a {
+  color: #888890;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: capitalize; }
 
 .footer-item-instagram {
   width: 23.0769%;
@@ -305,7 +342,9 @@ footer {
   justify-content: space-between; }
 
 .footer-item-gallery-img {
-  width: 31.1111%; }
+  width: 31.1111%;
+  border: 1px solid #888890;
+  margin-bottom: 10px; }
 
 .footer-payment-gallery {
   width: 85.9259%;
@@ -325,7 +364,12 @@ footer {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  color: #888890;
+  font-size: 14px; }
+
+.footer-bottom span {
+  color: #1a1a26; }
 
 .slider {
   display: -webkit-box;
@@ -612,10 +656,91 @@ footer {
 .product {
   width: 17.9487%;
   border: 1px solid red;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
+
+.product-info {
+  color: #1a1a26;
+  font-size: 14px;
+  font-weight: 400; }
+
+.price {
+  color: #1a1a26;
+  font-size: 18px;
+  font-weight: 400; }
+
+.price span {
+  color: #888890;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: line-through; }
+
+.product-ribbon-featured,
+.product-ribbon-sale,
+.product-ribbon-new {
+  width: 22.0476%;
+  height: 20px;
+  position: absolute;
+  top: 3%;
+  right: 5%;
+  z-index: 99;
+  border-radius: 35%;
+  margin: 0; }
+
+.product-ribbon-featured p,
+.product-ribbon-sale p,
+.product-ribbon-new p {
+  color: #fefeff;
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 0; }
+
+.product-ribbon-featured {
+  background-color: #ff9a9e; }
+
+.product-ribbon-sale {
+  background-color: #f6b895; }
+
+.product-ribbon-new {
+  background-color: #79dad6; }
+
+.first-new {
+  top: 9%; }
 
 .product-overlay {
-  display: none; }
+  display: none;
+  background: rgba(26, 26, 38, 0.5);
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0; }
+
+.product:hover .product-overlay,
+.product:hover .button {
+  display: block; }
+
+.button {
+  background-color: #ffffff;
+  width: 120px;
+  height: 40px;
+  color: #888890;
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 40px;
+  z-index: 1;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
 
 .testimonials-video {
   display: -webkit-box;
@@ -642,8 +767,35 @@ footer {
   align-items: center;
   height: 80vh; }
 
+.testimonials {
+  background-image: url("../assets/Shape BG.png");
+  background-repeat: no-repeat;
+  background-position: cover;
+  border: 1px solid red; }
+
+.testimonials h2 {
+  color: #1a1a26;
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-transform: capitalize; }
+
 .quote {
   width: 5.7291%; }
+
+.testimonial-text {
+  width: 75.4166%;
+  color: #1a1a26;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic; }
+
+.testimonial-text p:nth-child(2) {
+  color: #888890;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-style: none; }
 
 .testimonial-bullets {
   display: -webkit-box;
@@ -661,7 +813,9 @@ footer {
   height: 40px; }
 
 .video {
-  background-color: rgba(26, 26, 38, 0.5); }
+  background-image: url("../assets/daria-shevtsova-57355.png");
+  background-repeat: no-repeat;
+  background-position: cover; }
 
 .eclipse {
   border-radius: 50%;
@@ -708,13 +862,43 @@ footer {
   border: 1px solid blue;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between; }
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline; }
+
+.video-text h2 {
+  font-family: PressStyle;
+  color: #ffffff;
+  font-size: 50px;
+  text-transform: uppercase;
+  width: 35.9243%;
+  border: 1px solid red;
+  margin: 0; }
+
+.video-text h2:nth-child(2) {
+  width: 29.6218%; }
 
 .video-text-img {
   width: 26.4705%;
-  border: 1px solid green; }
+  border: 1px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.video-text h3 {
+  color: #ffffff;
+  font-size: 14px;
+  /* Approximation due to font substitution */
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-top: 0; }
 
 .blog {
   display: -webkit-box;
@@ -724,9 +908,23 @@ footer {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   border: 1px solid green;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
+
+.blog h2 {
+  color: #1a1a26;
+  font-size: 36px;
+  font-weight: 400;
+  text-transform: capitalize;
+  width: 21.7948%; }
 
 .blog-gallery {
   width: 100%;
@@ -740,6 +938,27 @@ footer {
 .blog-entry {
   width: 31.6239%; }
 
+.blog-details p {
+  color: #888890;
+  font-size: 14px;
+  font-weight: 400; }
+
+.blog-details p:nth-child(2) {
+  color: #1a1a26;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.blog-details a {
+  color: #1a1a26;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+  text-decoration: none; }
+
+.blog-details a:hover {
+  border-bottom: 2px solid lightgrey; }
+
 .subscribe {
   width: 100%;
   display: -webkit-box;
@@ -751,14 +970,40 @@ footer {
   flex-direction: column;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  text-align: center; }
+
+.subscribe h2 {
+  color: #1a1a26;
+  font-size: 36px;
+  font-weight: 400;
+  text-transform: capitalize; }
+
+.subscribe p {
+  width: 48.1196%;
+  color: #888890;
+  font-size: 14px;
+  font-weight: 400; }
 
 form {
-  width: 71.7948%;
-  border: 1px solid green; }
+  width: 71.7948%; }
+
+form .fa {
+  color: black;
+  left: 98%;
+  top: 10%;
+  position: absolute; }
+
+.subscribe-email {
+  position: relative; }
 
 [type=email] {
-  width: 100%; }
+  width: 100%;
+  color: #888890;
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+  border-bottom: 1px solid #e6e5e1; }
 
 .partners {
   width: 100%;
@@ -767,10 +1012,17 @@ form {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .partner {
   width: 11.5384%; }
+
+@font-face {
+  font-family: PressStyle;
+  src: url("PressStyle.woff"); }
 
 body {
   font-family: 'Poppins', sans-serif; }

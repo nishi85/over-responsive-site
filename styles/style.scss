@@ -7,6 +7,9 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 @import "components/slider";
 @import "components/main";
 
+@font-face { font-family: PressStyle; src: url('PressStyle.woff');
+ } 
+
 body {
     font-family: 'Poppins', sans-serif;
 }
