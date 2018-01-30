@@ -208,7 +208,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   position: absolute;
   font-size: 8px;
   top: -5px;
-  right: -10px;
+  right: -5px;
   text-align: center; }
 
 .shop-menu-eclipse p {
@@ -216,7 +216,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 footer {
   border-top: 1px solid #e6e5e1;
-  border-bottom: 1px solid #e6e5e1; }
+  border-bottom: 1px solid #e6e5e1;
+  padding: 25px 0; }
 
 .footer-top {
   display: -webkit-box;
@@ -242,7 +243,7 @@ footer {
 
 .over-info-logo {
   width: 25.6859%;
-  margin-bottom: 19.9167px; }
+  margin-bottom: 13px; }
 
 .over-info-p {
   color: #888890;
@@ -257,7 +258,6 @@ footer {
 
 .footer-contact span {
   color: #888890;
-  font-size: 14px;
   font-weight: 400; }
 
 .footer-nav-social {
@@ -346,6 +346,10 @@ footer {
   border: 1px solid #888890;
   margin-bottom: 10px; }
 
+.footer-item-gallery-img img {
+  width: 100%;
+  display: block; }
+
 .footer-payment-gallery {
   width: 85.9259%;
   display: -webkit-box;
@@ -386,7 +390,6 @@ footer {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: 100vh;
   background-image: url("../assets/anna-111431.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -440,9 +443,7 @@ footer {
   width: 5.0625%;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  border: 1px solid red;
-  position: absolute;
-  top: 90%; }
+  border: 1px solid red; }
 
 .slider-bullet {
   width: 18%;
@@ -464,7 +465,8 @@ footer {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  text-align: center; }
+  text-align: center;
+  margin-top: 50px; }
 
 .intro-title {
   background-image: url("../assets/plant.png");
@@ -489,7 +491,6 @@ footer {
   width: 65.8119%;
   color: #888890;
   font-size: 14px;
-  /* Approximation due to font substitution */
   font-weight: 400;
   text-align: center; }
 
@@ -514,11 +515,19 @@ footer {
   width: 100%;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-top: 50px; }
 
 .plants-air {
   width: 40.1709%;
   position: relative; }
+
+.plants-air img,
+.plants-office img,
+.plants-house img,
+.plants-containers img {
+  width: 100%;
+  display: block; }
 
 .plant-text {
   position: absolute;
@@ -598,13 +607,15 @@ footer {
   color: #1a1a26;
   font-size: 36px;
   font-weight: 400;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  margin-bottom: 15px; }
 
 .underline {
   width: 10.2564%;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin-bottom: 15px; }
 
 .underline span {
   width: 33.3333%;
@@ -616,7 +627,8 @@ footer {
   border-bottom: 2px solid #f5efef; }
 
 .products-filter {
-  width: 38.5897%; }
+  width: 38.5897%;
+  margin-bottom: 15px; }
 
 .products-filter ul {
   width: 100%;
@@ -654,7 +666,7 @@ footer {
   justify-content: space-between; }
 
 .product {
-  width: 17.9487%;
+  min-width: calc((100% / 5) - 20px);
   border: 1px solid red;
   text-align: center;
   position: relative; }
@@ -707,7 +719,14 @@ footer {
   background-color: #79dad6; }
 
 .first-new {
-  top: 9%; }
+  top: 12%; }
+
+.product-image {
+  position: relative; }
+
+.product-image img {
+  width: 100%;
+  display: block; }
 
 .product-overlay {
   display: none;
@@ -746,7 +765,14 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%; }
+  width: 100%;
+  margin-top: 75px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.outer-wrapper {
+  margin: 0 auto;
+  max-width: 1920px; }
 
 .testimonials,
 .video {
@@ -765,7 +791,7 @@ footer {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 80vh; }
+  padding: 50px 0; }
 
 .testimonials {
   background-image: url("../assets/Shape BG.png");
@@ -815,7 +841,7 @@ footer {
 .video {
   background-image: url("../assets/daria-shevtsova-57355.png");
   background-repeat: no-repeat;
-  background-position: cover; }
+  background-position: contain; }
 
 .eclipse {
   border-radius: 50%;
@@ -917,14 +943,15 @@ footer {
   flex-direction: column;
   border: 1px solid green;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-top: 50px; }
 
 .blog h2 {
   color: #1a1a26;
   font-size: 36px;
   font-weight: 400;
   text-transform: capitalize;
-  width: 21.7948%; }
+  margin-bottom: 15px; }
 
 .blog-gallery {
   width: 100%;
@@ -933,10 +960,15 @@ footer {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-top: 30px; }
 
 .blog-entry {
   width: 31.6239%; }
+
+.blog-img img {
+  width: 100%;
+  display: block; }
 
 .blog-details p {
   color: #888890;
@@ -986,7 +1018,8 @@ footer {
   font-weight: 400; }
 
 form {
-  width: 71.7948%; }
+  width: 71.7948%;
+  margin-top: 25px; }
 
 form .fa {
   color: black;
@@ -1015,22 +1048,153 @@ form .fa {
   justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin: 50px 0; }
 
 .partner {
-  width: 11.5384%; }
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 @font-face {
   font-family: PressStyle;
   src: url("PressStyle.woff"); }
 
 body {
-  font-family: 'Poppins', sans-serif; }
-
-img {
-  width: 100%;
-  display: block; }
+  font-family: 'Poppins', sans-serif;
+  font-size: 100%; }
 
 .wrapper {
   max-width: 1170px;
   margin: 0 auto; }
+
+@media (max-width: 1151px) {
+  .price {
+    font-size: 16px; }
+  .price span {
+    font-size: 12px; } }
+
+@media (max-width: 1140px) {
+  .footer-item-services {
+    width: 20%; }
+  .footer-item-account {
+    width: 18%; }
+  .over-info {
+    width: 35.9145%; } }
+
+@media (max-width: 1036px) {
+  .product-info {
+    font-size: 12px; }
+  .price {
+    font-size: 14px; }
+  .price span {
+    font-size: 10px; } }
+
+/* Portrait tablet and small desktops */
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .wrapper {
+    width: 98%; }
+  .nav-header {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .nav-menu,
+  .shop-menu {
+    width: 50%; }
+  .nav-header li a {
+    font-size: 12px; }
+  .logo {
+    width: 100%;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    order: -1; }
+  .logo-img {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .slider h3 {
+    font-size: 16px; }
+  .slider h1 {
+    font-size: 30px; }
+  .slider-arrow {
+    position: none;
+    width: 75%; }
+  .shop-btn {
+    width: 90px;
+    height: 30px;
+    color: #ffffff;
+    font-size: 8px;
+    line-height: 30px; }
+  .intro-title h3 {
+    font-size: 10px;
+    color: #1e1e2a; }
+  .intro-title h2 {
+    font-size: 24px;
+    margin-bottom: 0; }
+  .intro-text {
+    font-size: 12px; }
+  .intro h4 {
+    font-size: 12px;
+    margin-top: 0; }
+  .intro span {
+    font-size: 11px; }
+  .plant-text h3 {
+    font-size: 16px; }
+  .plant-text h4 {
+    font-size: 12px; }
+  .plant-text-air {
+    width: 44.6608%; }
+  .plant-text-office,
+  .plant-text-house {
+    width: 68.75%; }
+  .plant-text-container {
+    width: 37.3134%; }
+  .popular-products h2 {
+    font-size: 24px; }
+  .products-filter ul li {
+    font-size: 12px; }
+  .product-gallery {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .product {
+    width: 20%; }
+  .blog h2 {
+    font-size: 24px; }
+  .blog-details p {
+    font-size: 12px; }
+  .blog-details p:nth-child(2) {
+    font-size: 14px; }
+  .blog-details a {
+    font-size: 12px; }
+  .testimonials,
+  .video {
+    width: 100%; }
+  .subscribe h2 {
+    font-size: 24px; }
+  .luigiano {
+    display: none; }
+  .footer-top {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .over-info {
+    width: 100%;
+    text-align: justify;
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 4;
+    order: 4; }
+  .footer-item-services,
+  .footer-item-account,
+  .footer-item-instagram {
+    width: 33.3333%; }
+  .footer-bottom {
+    font-size: 12px; } }
+
+/* Landscape phones and down */

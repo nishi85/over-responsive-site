@@ -4,7 +4,6 @@
     justify-content: center;
     border: 1px solid green;
     flex-direction: column;
-    height: 100vh;
     background-image: url("../assets/anna-111431.png");
     // background-color:  rgba(255, 255, 255, 0.5);
     background-repeat: no-repeat;
@@ -36,7 +35,6 @@
     border: 1px solid blue;
     position: absolute;
     top: 50%;
-    // transform: translatey(-50%);
 }
 
 .slider-title {
@@ -61,9 +59,8 @@ line-height: 60px;
     width: 5.0625%;
     justify-content: space-around;
     border: 1px solid red;
-    position: absolute;
-    top: 90%;
-    // height: 30vh;
+    // position: absolute;
+    // top: 90%;
 }
 
 .slider-bullet {

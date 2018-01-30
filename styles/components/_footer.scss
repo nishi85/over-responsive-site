@@ -1,6 +1,7 @@
 footer {
-    border-top: 1px solid #e6e5e1;;
-    border-bottom: 1px solid #e6e5e1;;
+    border-top: 1px solid #e6e5e1;
+    border-bottom: 1px solid #e6e5e1;
+    padding: 25px 0;
 }
 
 .footer-top {
@@ -18,7 +19,7 @@ footer {
 
 .over-info-logo {
     width: 25.6859%;
-    margin-bottom: 19.9167px;
+    margin-bottom: 13px;
 }
 
 .over-info-p {
@@ -36,7 +37,7 @@ footer {
 
 .footer-contact span {
     color:  #888890;
-    font-size: 14px;
+    // font-size: 14px;
     font-weight: 400;
 }
 
@@ -116,6 +117,11 @@ footer {
     width: 31.1111%;
     border: 1px solid #888890;
     margin-bottom: 10px;
+}
+
+.footer-item-gallery-img img {
+    width: 100%;
+    display: block;
 }
 
 .footer-payment-gallery {

@@ -12,12 +12,13 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 body {
     font-family: 'Poppins', sans-serif;
+    font-size: 100%;
 }
 
-img {
-    width: 100%;
-    display: block;
-}
+// img {
+//     width: 100%;
+//     display: block;
+// }
 
 .wrapper {
     max-width: 1170px;
@@ -29,3 +30,243 @@ img {
 //Delete the partial
 //Import the partial
 //Save style.scss
+
+
+@media (max-width: 1151px) {
+    .wrapper {
+        // background: blue;
+    }
+
+    // .product {
+    //     width: 18.9487%;
+    // }
+
+    .price {
+        font-size: 16px;
+    }
+    .price span {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1140px) {
+    .footer-item-services {
+        width: 20%;
+    }
+
+    .footer-item-account {
+        width: 18%;
+    }
+
+    .over-info {
+        width: 35.9145%;
+    }
+    
+}
+
+
+
+// @media (max-width: 1090px) {
+//     .product {
+//         width: 20%;
+//     }
+    
+// }
+
+@media (max-width: 1036px) {
+    .product-info {
+        font-size: 12px;
+    }
+
+    .price {
+        font-size: 14px;
+    }
+    .price span {
+        font-size: 10px;
+    }
+
+
+}
+
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+
+    .wrapper {
+        width: 98%;
+    }
+
+    .nav-header {
+        flex-wrap: wrap;
+    }
+
+    .nav-menu,
+    .shop-menu { 
+        width: 50%
+    }
+
+    .nav-header li a {
+        font-size: 12px;
+    }
+
+    .logo,{
+        width: 100%;
+        order: -1;
+    }
+
+    .logo-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .slider h3 {
+        font-size: 16px;
+    }
+
+    .slider h1 {
+        font-size: 30px;
+    }
+
+    .slider-arrow {
+        position: none;
+        width: 75%;
+    }
+
+    .shop-btn {
+        width: 90px;
+        height: 30px;
+        color:  #ffffff;
+        font-size: 8px;
+        line-height: 30px;
+    }
+
+    .intro-title h3 {
+        font-size: 10px;
+        color:  #1e1e2a;
+    }
+
+    .intro-title h2 {
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+
+    .intro-text  {
+        font-size: 12px;
+    }
+
+    .intro h4 {
+    font-size: 12px;
+    margin-top: 0;
+    }
+
+    .intro span {
+        font-size: 11px;
+    }
+
+    .categories-gallery {
+        // flex-direction:column;
+    }
+
+
+    .plant-text h3 {
+        font-size: 16px;
+    }
+
+    .plant-text h4 {
+        font-size: 12px;
+
+    }
+
+    .plant-text-air {
+        width: 44.6608%;
+    }
+
+    .plant-text-office,
+    .plant-text-house {
+        width: 68.75%;
+    }
+
+    .plant-text-container {
+        width: 37.3134%;
+    }
+
+    .popular-products h2 {
+        font-size: 24px;
+    }
+
+    .products-filter ul li {
+        font-size: 12px;
+    }
+
+    .product-gallery {
+        justify-content: center;
+    }
+
+    .product {
+    // width: calc((100% / 4) - 10px);
+    width: 20%;
+    }
+
+    .blog h2 {
+        font-size: 24px;
+    }
+
+    .blog-details p {
+    font-size: 12px;
+    }
+
+    .blog-details p:nth-child(2) {
+        font-size: 14px;
+    }
+
+    .blog-details a {
+        font-size: 12px;
+    }
+
+    .testimonials,
+    .video {
+        width: 100%;
+    }
+
+    .subscribe h2 {
+    font-size: 24px;
+    }
+
+    .luigiano {
+        display: none;
+    }
+
+    .footer-top {
+        flex-wrap: wrap;
+    }
+
+    .over-info {
+        width: 100%;
+        text-align: justify;
+        order: 4; 
+    }
+
+    .footer-nav-social {
+        
+    }
+
+    .footer-item-services,
+    .footer-item-account,
+    .footer-item-instagram {
+        width: 33.3333%;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+    }
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}
