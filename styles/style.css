@@ -393,7 +393,8 @@ footer {
   background-image: url("../assets/anna-111431.png");
   background-repeat: no-repeat;
   background-position: center;
-  position: relative; }
+  position: relative;
+  padding-top: 115px; }
 
 .slider h3 {
   color: #888890;
@@ -443,7 +444,9 @@ footer {
   width: 5.0625%;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  border: 1px solid red; }
+  border: 1px solid red;
+  margin-top: 100px;
+  margin-bottom: 15px; }
 
 .slider-bullet {
   width: 18%;
@@ -791,7 +794,8 @@ footer {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 50px 0; }
+  padding-top: 50px;
+  padding-bottom: 80px; }
 
 .testimonials {
   background-image: url("../assets/Shape BG.png");
@@ -801,7 +805,7 @@ footer {
 
 .testimonials h2 {
   color: #1a1a26;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 400;
   margin-bottom: 10px;
   text-transform: capitalize; }
@@ -833,7 +837,7 @@ footer {
   justify-content: space-between; }
 
 .testimonial-bullet {
-  width: 20.316%;
+  width: 40px;
   border-radius: 50%;
   background-color: #888890;
   height: 40px; }
@@ -841,7 +845,26 @@ footer {
 .video {
   background-image: url("../assets/daria-shevtsova-57355.png");
   background-repeat: no-repeat;
-  background-position: contain; }
+  background-position: contain;
+  position: relative; }
+
+.video-overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(26, 26, 38, 0.5); }
+
+.video:hover .video-overlay {
+  display: block; }
+
+.play-icon {
+  margin-bottom: 30px; }
+
+.play-icon,
+.video-text {
+  z-index: 99; }
 
 .eclipse {
   border-radius: 50%;
@@ -1104,6 +1127,11 @@ body {
   .nav-menu,
   .shop-menu {
     width: 50%; }
+  .nav-menu {
+    margin-top: 0; }
+  .shop-menu {
+    padding-bottom: 15px;
+    padding-right: 5px; }
   .nav-header li a {
     font-size: 12px; }
   .logo {
@@ -1119,19 +1147,28 @@ body {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
+  .slider {
+    padding-top: 0px;
+    padding-bottom: 0px; }
   .slider h3 {
     font-size: 16px; }
   .slider h1 {
     font-size: 30px; }
   .slider-arrow {
-    position: none;
-    width: 75%; }
+    width: 80%; }
   .shop-btn {
     width: 90px;
     height: 30px;
     color: #ffffff;
     font-size: 8px;
     line-height: 30px; }
+  .slider-bullets {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 15%; }
+  .slider-bullet img {
+    width: 10px;
+    height: 10px; }
   .intro-title h3 {
     font-size: 10px;
     color: #1e1e2a; }
@@ -1161,11 +1198,13 @@ body {
   .products-filter ul li {
     font-size: 12px; }
   .product-gallery {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
   .product {
-    width: 20%; }
+    width: calc((100% / 4) - 10px); }
+  .first-new {
+    top: 16%; }
   .blog h2 {
     font-size: 24px; }
   .blog-details p {
@@ -1198,3 +1237,60 @@ body {
     font-size: 12px; } }
 
 /* Landscape phones and down */
+@media (max-width: 480px) {
+  .wrapper {
+    width: 90%; }
+  .nav-menu,
+  .shop-menu {
+    width: 100%; }
+  .shop-menu {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0;
+    margin: 10px 0; }
+  .shop-menu-item {
+    margin: 0; }
+  .nav-menu {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .nav-header li {
+    width: 100%; }
+  .nav-header li a {
+    display: block;
+    background: pink;
+    text-align: center; }
+  .plant-text {
+    top: 85%;
+    background: none; }
+  .plant-text:hover {
+    background: white; }
+  .plant-text h3 {
+    font-size: 10px;
+    display: inline-block;
+    margin: 0; }
+  .plant-text h4 {
+    font-size: 8px;
+    display: inline-block;
+    margin: 0; }
+  .plant-text-air {
+    width: 100%; }
+  .plant-text-office,
+  .plant-text-house {
+    width: 100%; }
+  .plant-text-container {
+    width: 100%; }
+  .products-filter {
+    width: 50%; }
+  .product {
+    width: calc((100% / 3) - 10px); }
+  .video-text {
+    width: 65%; } }

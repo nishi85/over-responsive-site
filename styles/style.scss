@@ -109,11 +109,20 @@ body {
         width: 50%
     }
 
+    .nav-menu {
+        margin-top: 0;
+    }
+
+    .shop-menu {
+        padding-bottom: 15px;
+        padding-right: 5px;
+    }
+
     .nav-header li a {
         font-size: 12px;
     }
 
-    .logo,{
+    .logo {
         width: 100%;
         order: -1;
     }
@@ -122,6 +131,11 @@ body {
         width: 100%;
         display: flex;
         justify-content: center;
+    }
+
+    .slider {
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
     
     .slider h3 {
@@ -133,8 +147,8 @@ body {
     }
 
     .slider-arrow {
-        position: none;
-        width: 75%;
+        // position: none;
+        width: 80%;
     }
 
     .shop-btn {
@@ -143,6 +157,18 @@ body {
         color:  #ffffff;
         font-size: 8px;
         line-height: 30px;
+    }
+
+    .slider-bullets {
+        // display: none;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        width: 15%;
+    }
+
+    .slider-bullet img {
+        width: 10px;
+        height: 10px;
     }
 
     .intro-title h3 {
@@ -179,7 +205,6 @@ body {
 
     .plant-text h4 {
         font-size: 12px;
-
     }
 
     .plant-text-air {
@@ -204,13 +229,17 @@ body {
     }
 
     .product-gallery {
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .product {
-    // width: calc((100% / 4) - 10px);
-    width: 20%;
+    width: calc((100% / 4) - 10px);
     }
+
+    .first-new {
+    top: 16%;
+    }
+
 
     .blog h2 {
         font-size: 24px;
@@ -269,4 +298,87 @@ body {
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+
+    .wrapper {
+        width: 90%;
+    }
+    .nav-menu,
+    .shop-menu { 
+        width: 100%;
+    }
+
+    .shop-menu {
+        justify-content: space-between;
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    .shop-menu-item {
+        margin: 0;
+    }
+
+    .nav-menu {
+        order: 2;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-header li  {
+        width: 100%;
+    }
+
+    .nav-header li a {
+        display: block;
+        background: pink;
+        text-align: center;
+    }
+
+    .plant-text {
+        top: 85%;
+        background: none;
+    }
+
+    .plant-text:hover {
+        background: white;
+    }
+
+    .plant-text h3 {
+        font-size: 10px;
+        display: inline-block;
+        margin: 0;
+    }
+
+    .plant-text h4 {
+        font-size: 8px;
+        display: inline-block;
+        margin: 0;
+
+    }
+
+    .plant-text-air {
+        width: 100%;
+    }
+
+    .plant-text-office,
+    .plant-text-house {
+        width: 100%;
+    }
+
+    .plant-text-container {
+        width: 100%;
+    }
+
+    .products-filter {
+        width: 50%;
+    }
+
+    .product {f
+    width: calc((100% / 3) - 10px);
+    }
+
+    .video-text {
+        width: 65%;
+    }
+
+
 }
