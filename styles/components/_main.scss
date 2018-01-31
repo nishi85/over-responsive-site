@@ -14,20 +14,19 @@
     background-image: url("../assets/plant.png");
     background-repeat: no-repeat;
     background-position: center;
-    border: 1px solid red;
     padding-bottom: 10px;
 
 }
 
 .intro-title h3 {
     color:  #a8edea;
-    font-size: 18px;
+    @include remCalc(18);
     margin: 0;
 }
 
 .intro-title h2 {
     color:  #1e1e2a;
-    font-size: 36px;
+    @include remCalc(36);
     text-transform: capitalize;
     font-weight: 400;
     margin-top: 0;
@@ -36,14 +35,14 @@
 .intro-text  {
     width: 65.8119%;
     color:  #888890;
-    font-size: 14px;
+    @include remCalc(14);
     font-weight: 400;
     text-align: center;
 }
 
 .intro h4 {
     color:  #1e1e2a;
-    font-size: 16px;
+    @include remCalc(16);
     font-weight: 400;
     text-transform: uppercase;
     font-weight: 400;
@@ -51,7 +50,7 @@
 
 .intro span {
     color:  #888890;
-    font-size: 14px;
+    @include remCalc(14);
     font-weight: 400;
     text-transform: capitalize;
     font-style: italic;
@@ -82,7 +81,6 @@
     position: absolute;
     top:50%;
     left: 50%;
-    border: 1px solid black;
     background: white;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -90,7 +88,7 @@
 
 .plant-text h3 {
     color:  #1a1a26;
-    font-size: 24px;
+    @include remCalc(24);
     font-weight: 400;
     text-transform: capitalize;
     margin-bottom: 0;
@@ -98,7 +96,7 @@
 
 .plant-text h4 {
     color:  #888890;
-    font-size: 16px;
+    @include remCalc(16);
     font-weight: 400;
     margin-top: 0;
 }
@@ -118,7 +116,6 @@
 
 .plants-side {
     width: 57.2649%;
-    border: 1px solid green;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -144,12 +141,11 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-    border: 1px solid green;
 }
 
 .popular-products h2 {
     color:  #1a1a26;
-    font-size: 36px;
+    @include remCalc(36);
     font-weight: 400;
     text-transform: capitalize;
     margin-bottom: 15px;
@@ -180,14 +176,13 @@
 .products-filter ul {
     width: 100%;
     display: flex;
-    border: 1px solid red;
     justify-content: space-between;
     padding-left: 0;
 }
 
 .products-filter ul li {
     list-style: none;
-    font-size: 18px;
+    @include remCalc(18);
     font-weight: 400;
 }
 
@@ -195,6 +190,7 @@
     text-decoration: none;
     color:  #1a1a26;
     text-transform: capitalize;
+    transition: all 1s;
 }
 
 .products-filter ul li a:hover {
@@ -210,28 +206,27 @@
 
 .product {
     min-width: calc((100% / 5) - 20px);
-    // width: 17.9487%;
-    // width: 200px;
-    border: 1px solid red;
+    margin-top: 5px;
+    margin-bottom: 5px;
     text-align: center;
     position: relative;
 }
 
 .product-info {
     color:  #1a1a26;
-    font-size: 14px;
+    @include remCalc(14);
     font-weight: 400;
 }
 
 .price {
     color:  #1a1a26;
-    font-size: 18px;
+    @include remCalc(18);
     font-weight: 400;
 }
 
 .price span {
     color:  #888890;
-    font-size: 14px;
+    @include remCalc(14);
     font-weight: 400;
     text-decoration: line-through;
 }
@@ -245,7 +240,7 @@
     top: 3%;
     right: 5%;
     z-index: 99;
-    border-radius: 35%;
+    border-radius: 50px;
     margin: 0;
 }
 
@@ -253,7 +248,7 @@
 .product-ribbon-sale p,
 .product-ribbon-new p {
     color:  #fefeff;
-    font-size: 10px;
+    @include remCalc(10);
     font-weight: 400;
     text-transform: uppercase;
     text-align: center;
@@ -295,16 +290,17 @@
 }
 
 .product:hover .product-overlay,
-.product:hover .button {
+.product:hover .button-cart {
     display: block;
 }
 
-.button {
+.button-cart,
+    {
     background-color:  #ffffff;
     width: 120px;
     height: 40px;
     color:  #888890;
-    font-size: 12px;
+    @include remCalc(12);
     font-weight: 400;
     text-decoration: none;
     text-transform: uppercase;
@@ -348,12 +344,11 @@
     background-image: url("../assets/Shape BG.png");
     background-repeat: no-repeat;
     background-position: cover;
-    border: 1px solid red;
 }
 
 .testimonials h2 {
     color:  #1a1a26;
-    font-size: 32px;
+    @include remCalc(32);
     font-weight: 400;
     margin-bottom: 10px;
     text-transform: capitalize;
@@ -366,14 +361,14 @@
 .testimonial-text {
     width: 75.4166%;
     color:  #1a1a26;
-    font-size: 16px;
+    @include remCalc(16);
     font-weight: 400;
     font-style: italic;
 }
 
 .testimonial-text p:nth-child(2) {
     color:  #888890;
-    font-size: 14px;
+    @include remCalc(14);
     font-weight: 400;
     text-transform: uppercase;
     font-style: none;
@@ -390,6 +385,11 @@
     border-radius: 50%;
     background-color:  #888890;
     height: 40px;
+}
+
+.bullet-grey {
+    width: 60px;
+    height: 60px;
 }
 
 .video {
@@ -445,26 +445,24 @@
 .fa {
     color: white;
     color:  #ffffff;
-    font-size: 24px;/* Approximation due to font substitution */
+    @include remCalc(24);
     font-weight: 400;
 }
 
 .video-text {
     width: 49.5833%;
     display: flex;
-    border: 1px solid blue;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: baseline;
 }
 
 .video-text h2 {
     font-family: PressStyle;
     color:  #ffffff;
-    font-size: 50px;
+    @include remCalc(50);
     text-transform: uppercase;
     width: 35.9243%;
-    border: 1px solid red;
     margin: 0;
 }
 
@@ -474,14 +472,13 @@
 
 .video-text-img {
     width: 26.4705%;
-    border: 1px solid green;
     display: flex;
     align-items: center;
 }
 
 .video-text h3 {
     color:  #ffffff;
-    font-size: 14px;/* Approximation due to font substitution */
+    @include remCalc(14);
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -496,14 +493,13 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 1px solid green;
     flex-wrap: wrap;
     margin-top: 50px;
 }
 
 .blog h2 {
     color:  #1a1a26;
-    font-size: 36px;
+    @include remCalc(36);
     font-weight: 400;
     text-transform: capitalize;
     margin-bottom: 15px;
@@ -528,20 +524,20 @@
 
 .blog-details p {
     color:  #888890;
-    font-size: 14px;
+    @include remCalc(14);
     font-weight: 400;
 }
 
 .blog-details p:nth-child(2) {
     color:  #1a1a26;
-    font-size: 16px;
+    @include remCalc(16);
     font-weight: 700;
     text-transform: uppercase;
 }
 
 .blog-details a {
     color:  #1a1a26;
-    font-size: 14px;
+    @include remCalc(14);
     font-weight: 400;
     text-transform: capitalize;
     text-decoration: none;
@@ -563,7 +559,7 @@
 
 .subscribe h2 {
     color:  #1a1a26;
-    font-size: 36px;
+    @include remCalc(36);
     font-weight: 400;
     text-transform: capitalize;
 }
@@ -571,7 +567,7 @@
 .subscribe p {
     width: 48.1196%;
     color:  #888890;
-    font-size: 14px;
+    @include remCalc(14);
     font-weight: 400;
 }
 
@@ -593,14 +589,11 @@ form .fa {
 [type=email] {
     width: 100%;
     color:  #888890;
-    font-size: 14px;
+    @include remCalc(14);
     font-weight: 400;
     border: none;
     border-bottom: 1px solid #e6e5e1;;
 }
-
-
-
 
 // partners
 
@@ -617,6 +610,5 @@ form .fa {
 .partner {
     width: 100%;
     display:flex;
-    // justify-content: space-between;
 
 }

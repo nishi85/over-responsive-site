@@ -24,20 +24,19 @@ footer {
 
 .over-info-p {
     color:  #888890;
-    font-size: 14px;
+    @include remCalc(14);
     font-weight: 400;    
 }
 
 .footer-contact {
     color:  #1a1a26;
-    font-size: 14px;
+    @include remCalc(14);
     font-weight: 700;
     margin: 5px 0;
 }
 
 .footer-contact span {
     color:  #888890;
-    // font-size: 14px;
     font-weight: 400;
 }
 
@@ -63,7 +62,7 @@ footer {
 
 .footer-item-title {
     color:  #1a1a26;
-    font-size: 24px;
+    @include remCalc(24);
     font-weight: 400;
 }
 
@@ -91,7 +90,7 @@ footer {
 
 .footer-item-menu li a {
     color:  #888890;
-    font-size: 14px;
+    @include remCalc(14);
     font-weight: 400;
     text-decoration: none;
     text-transform: capitalize;
@@ -100,7 +99,6 @@ footer {
 .footer-item-instagram {
     width: 23.0769%;
     display: flex;
-    border: 1px solid red;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -108,7 +106,6 @@ footer {
 .footer-item-gallery {
     width: 100%;
     display: flex;
-    border: 1px solid green;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -138,9 +135,10 @@ footer {
 
 .footer-bottom {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     color:  #888890;
-    font-size: 14px;
+    @include remCalc(14);
 }
 
 .footer-bottom span {

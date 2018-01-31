@@ -2,23 +2,27 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 .clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+// MEDIA QUERIES AT BOTTOM
+
+
+@mixin remCalc($fontSize) {
+   font-size: ($fontSize / 16) * 1rem;
+}
+
 @import "components/header";
 @import "components/footer";
 @import "components/slider";
 @import "components/main";
 
 @font-face { font-family: PressStyle; src: url('PressStyle.woff');
- } 
+} 
 
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 100%;
 }
 
-// img {
-//     width: 100%;
-//     display: block;
-// }
+
 
 .wrapper {
     max-width: 1170px;
@@ -33,19 +37,12 @@ body {
 
 
 @media (max-width: 1151px) {
-    .wrapper {
-        // background: blue;
-    }
-
-    // .product {
-    //     width: 18.9487%;
-    // }
 
     .price {
-        font-size: 16px;
+        @include remCalc(16);
     }
     .price span {
-        font-size: 12px;
+        @include remCalc(12);
     }
 }
 
@@ -61,36 +58,36 @@ body {
     .over-info {
         width: 35.9145%;
     }
+    .video-text {
+        width: 60%;
+    }
     
 }
 
 
 
-// @media (max-width: 1090px) {
-//     .product {
-//         width: 20%;
-//     }
-    
-// }
-
 @media (max-width: 1036px) {
     .product-info {
-        font-size: 12px;
+        @include remCalc(12);
     }
 
     .price {
-        font-size: 14px;
+        @include remCalc(14);
     }
     .price span {
-        font-size: 10px;
+        @include remCalc(10);
     }
 
+    
 
 }
 
 
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
+    .video-text{
+        width: 74%;
+    }
 }
 
 /* Landscape phone to portrait tablet */
@@ -119,7 +116,7 @@ body {
     }
 
     .nav-header li a {
-        font-size: 12px;
+        @include remCalc(12);
     }
 
     .logo {
@@ -139,15 +136,14 @@ body {
     }
     
     .slider h3 {
-        font-size: 16px;
+        @include remCalc(16);
     }
 
     .slider h1 {
-        font-size: 30px;
+        @include remCalc(30);
     }
 
     .slider-arrow {
-        // position: none;
         width: 80%;
     }
 
@@ -155,12 +151,11 @@ body {
         width: 90px;
         height: 30px;
         color:  #ffffff;
-        font-size: 8px;
+        @include remCalc(8);
         line-height: 30px;
     }
 
     .slider-bullets {
-        // display: none;
         margin-top: 5px;
         margin-bottom: 10px;
         width: 15%;
@@ -171,61 +166,102 @@ body {
         height: 10px;
     }
 
+    .intro {
+        margin-top: 25px;
+    }
+
     .intro-title h3 {
-        font-size: 10px;
+        @include remCalc(10);
         color:  #1e1e2a;
     }
 
     .intro-title h2 {
-        font-size: 24px;
+        @include remCalc(24);
         margin-bottom: 0;
     }
 
     .intro-text  {
-        font-size: 12px;
+        @include remCalc(12);
     }
 
     .intro h4 {
-    font-size: 12px;
+    @include remCalc(12);
     margin-top: 0;
     }
 
     .intro span {
-        font-size: 11px;
+        @include remCalc(11);
     }
 
     .categories-gallery {
-        // flex-direction:column;
+    margin-top: 25px;
     }
 
-
     .plant-text h3 {
-        font-size: 16px;
+        @include remCalc(16);
     }
 
     .plant-text h4 {
-        font-size: 12px;
+        @include remCalc(12);
     }
 
-    .plant-text-air {
-        width: 44.6608%;
+    .plant-text {
+        top: 92%;
+        background: none;
     }
 
+    .plants-air .plant-text {
+        top: 96%;
+    }
+
+     .plant-text h3 {
+         @include remCalc(11);
+        display: inline-block;
+        margin: 0;
+    }
+
+    .plant-text h4 {
+        @include remCalc(9);
+        display: inline-block;
+        margin: 0;
+    }
+
+    .plants-air:hover .plant-text,
+    .plants-office:hover .plant-text,
+    .plants-house:hover .plant-text,
+    .plants-containers:hover .plant-text, {
+        background: white;
+        border: 1px solid black;
+    }
+
+    .plant-text:hover {
+        background: white;
+        border: 1px solid black;
+    }
+
+    .plant-text-air,
     .plant-text-office,
-    .plant-text-house {
-        width: 68.75%;
-    }
-
+    .plant-text-house,
     .plant-text-container {
-        width: 37.3134%;
+        width: 100%;
     }
 
     .popular-products h2 {
-        font-size: 24px;
+        @include remCalc(24);
+        margin-bottom: 10px;
     }
 
+    .underline {
+        margin-bottom: 5px;
+    }
+
+    .products-filter {
+    margin-bottom: 10px;
+    }
+
+
     .products-filter ul li {
-        font-size: 12px;
+        @include remCalc(12);
     }
 
     .product-gallery {
@@ -233,28 +269,49 @@ body {
     }
 
     .product {
-    width: calc((100% / 4) - 10px);
+    width: calc((100% / 3) - 10px);
     }
 
     .first-new {
-    top: 16%;
+        top: 16%;
     }
 
+    .testimonials-video {
+        margin-top: 25px;
+    }
+
+    .testimonial-bullets {
+    width: 20%;
+    }
+
+    .testimonial-bullet {
+    width: 20px;
+    height: 20px;
+    }
+
+    .bullet-grey {
+    width: 40px;
+    height: 40px;
+    }
+
+    .blog {
+        margin-top: 25px;
+    }
 
     .blog h2 {
-        font-size: 24px;
+        @include remCalc(24);
     }
 
     .blog-details p {
-    font-size: 12px;
+        @include remCalc(12);
     }
 
     .blog-details p:nth-child(2) {
-        font-size: 14px;
+        @include remCalc(14);
     }
 
     .blog-details a {
-        font-size: 12px;
+        @include remCalc(12);
     }
 
     .testimonials,
@@ -263,7 +320,7 @@ body {
     }
 
     .subscribe h2 {
-    font-size: 24px;
+        @include remCalc(24);
     }
 
     .luigiano {
@@ -280,10 +337,6 @@ body {
         order: 4; 
     }
 
-    .footer-nav-social {
-        
-    }
-
     .footer-item-services,
     .footer-item-account,
     .footer-item-instagram {
@@ -291,7 +344,7 @@ body {
     }
 
     .footer-bottom {
-        font-size: 12px;
+        @include remCalc(12);
     }
 
 }
@@ -329,8 +382,14 @@ body {
 
     .nav-header li a {
         display: block;
-        background: pink;
+        background-color: white;
         text-align: center;
+        transition: color 2s, background-color 1s;
+    }
+
+    .nav-header li a:hover {
+        background-color: black;
+        color: white;
     }
 
     .plant-text {
@@ -343,42 +402,60 @@ body {
     }
 
     .plant-text h3 {
-        font-size: 10px;
+        @include remCalc(10);
         display: inline-block;
         margin: 0;
     }
 
     .plant-text h4 {
-        font-size: 8px;
+        @include remCalc(8);
         display: inline-block;
         margin: 0;
 
     }
 
     .plant-text-air {
-        width: 100%;
-    }
-
-    .plant-text-office,
-    .plant-text-house {
-        width: 100%;
-    }
-
-    .plant-text-container {
-        width: 100%;
+        top: 85%;
     }
 
     .products-filter {
         width: 50%;
     }
 
-    .product {f
-    width: calc((100% / 3) - 10px);
+    .product {
+    width: calc((100% / 2) - 10px);
     }
 
     .video-text {
         width: 65%;
     }
 
+    .testimonial-bullet {
+    width: 10px;
+    height: 10px;
+    }
+
+    .bullet-grey {
+    width: 20px;
+    height: 20px;
+    }
+
+    .video-text {
+        width: 70%;
+    }
+
+    .yorkshire {
+        display:none;
+    }
+
+    .footer-item-services,
+    .footer-item-account,
+    .footer-item-instagram {
+        width: 50%;
+    }
+
+    .over-info {
+    margin-top: 25px;
+    }
 
 }

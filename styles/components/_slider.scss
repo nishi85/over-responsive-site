@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid green;
     flex-direction: column;
     background-image: url("../assets/anna-111431.png");
     background-repeat: no-repeat;
@@ -13,7 +12,7 @@
 
 .slider h3 {
     color:  #888890;
-    font-size: 32px;
+    @include remCalc(32);
     text-transform: capitalize;
     font-weight: 400;
     margin-bottom: 0;
@@ -21,7 +20,7 @@
 
 .slider h1 {
     color:  #1d1d29;
-    font-size: 60px;
+    @include remCalc(60);
     font-weight: 400;
     text-transform: capitalize;
     margin-top: 0;
@@ -32,7 +31,6 @@
     width: 95%;
     display: flex;
     justify-content: space-between;
-    border: 1px solid blue;
     position: absolute;
     top: 50%;
 }
@@ -42,23 +40,28 @@
 }
 
 .shop-btn {
-background-color:  #f07f84;
-width: 180px;
-height: 60px;
-color:  #ffffff;
-font-size: 16px;
-font-weight: 700;
-text-decoration: none;
-text-transform: uppercase;
-text-align: center;
-line-height: 60px;
+    background-color:  #f07f84;
+    width: 180px;
+    height: 60px;
+    color:  #ffffff;
+    @include remCalc(16);
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 60px;
+    transition: all 1s;
+}
+
+.shop-btn:hover {
+    background-color: hsl(357, 54%, 55%);
+    color: black;
 }
 
 .slider-bullets {
     display: flex;
     width: 5.0625%;
     justify-content: space-around;
-    border: 1px solid red;
     margin-top: 100px;
     margin-bottom: 15px;
 }

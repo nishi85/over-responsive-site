@@ -9,7 +9,6 @@
     width:33.3333%;
     justify-content: space-between;
     padding: 0;
-    border: 1px solid red;
 }
 
 .nav-header li {
@@ -20,18 +19,19 @@
     text-decoration: none;
     text-transform: uppercase;
     color:  #1a1a26;
-    font-size: 14px;
+    @include remCalc(14);
     font-weight: 700;
+    transition: border-bottom 2s, color 1s;
 }
 
 .nav-header li a:hover {
     color: #888890;
+    border-bottom: 1px solid red;
 }
 
 .logo {
     width: 33.3333%;
     height: 28px;
-    border: 1px solid green;
     display: flex;
     justify-content: center;
 }
@@ -43,7 +43,6 @@
 .shop-menu {
     width: 33.3333%;
     display: flex;
-    border: 1px solid green;
     justify-content: flex-end;
     align-items: center;
 }
@@ -64,10 +63,11 @@
     width: 18px;
     height: 18px;
     position: absolute;
-    font-size: 8px;
+    @include remCalc(8);
     top: -5px;
     right: -5px;
     text-align: center;
+    display: none;
 }
 
 .shop-menu-eclipse p {
