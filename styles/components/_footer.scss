@@ -94,6 +94,13 @@ footer {
     font-weight: 400;
     text-decoration: none;
     text-transform: capitalize;
+    transition: 0.8s;
+    border-bottom: 1px solid transparent;
+}
+
+.footer-item-menu li a:hover {
+    color: #000000;
+    border-bottom: 1px solid #000000;
 }
 
 .footer-item-instagram {
@@ -112,7 +119,6 @@ footer {
 
 .footer-item-gallery-img {
     width: 31.1111%;
-    border: 1px solid #888890;
     margin-bottom: 10px;
 }
 

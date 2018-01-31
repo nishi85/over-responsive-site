@@ -392,13 +392,11 @@ body {
         color: white;
     }
 
-    .plant-text {
-        top: 85%;
-        background: none;
-    }
 
-    .plant-text:hover {
+    .plant-text {
         background: white;
+        border: 1px solid black;
+        top: 85%;
     }
 
     .plant-text h3 {
@@ -426,8 +424,21 @@ body {
     width: calc((100% / 2) - 10px);
     }
 
+    .product-overlay {
+    display: block;
+    background: none;
+    }
+
+    .button-cart {
+        display: block;
+    }
+
     .video-text {
-        width: 65%;
+    width: 65%;
+    }
+
+    .video-overlay {
+    display: block;
     }
 
     .testimonial-bullet {
@@ -441,18 +452,32 @@ body {
     }
 
     .video-text {
-        width: 70%;
+    width: 70%;
     }
 
-    .yorkshire {
+    .blog-gallery {
+        flex-wrap: wrap;
+    }
+
+    .blog-entry {
+        width: 45%;
+        margin-bottom: 15px;
+    }
+
+
+    .yorkshire,
+    .sears {
         display:none;
     }
 
     .footer-item-services,
-    .footer-item-account,
-    .footer-item-instagram {
+    .footer-item-account {
         width: 50%;
     }
+    .footer-item-instagram {
+        width: 100%;
+    }
+
 
     .over-info {
     margin-top: 25px;

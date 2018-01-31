@@ -356,6 +356,12 @@
 
 .quote {
     width: 5.7291%;
+    transform: rotate(0deg);
+    transition: all 1s;
+}
+
+.quote:hover {
+    transform: rotate(360deg);
 }
 
 .testimonial-text {
@@ -376,7 +382,7 @@
 
 .testimonial-bullets {
     display: flex;
-    width: 28.0625%;
+    width: 30.0625%;
     justify-content: space-between;
 }
 
@@ -414,6 +420,12 @@
 
 .play-icon {
     margin-bottom: 30px;
+    transform: scaleX(1) scaleY(1);
+    transition: all 0.8s;
+}
+
+.play-icon:hover {
+    transform: scaleX(1.1) scaleY(1.1);
 }
 
 .play-icon,
@@ -591,8 +603,12 @@ form .fa {
     color:  #888890;
     @include remCalc(14);
     font-weight: 400;
-    border: none;
+    border: 1px solid transparent;
     border-bottom: 1px solid #e6e5e1;;
+}
+
+form:hover [type=email]{
+    border: 1px solid skyblue;
 }
 
 // partners
