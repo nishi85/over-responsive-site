@@ -1154,7 +1154,15 @@ body {
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
   .video-text {
-    width: 74%; } }
+    width: 74%; }
+  .testimonial-bullets {
+    width: 25%; }
+  .testimonial-bullet {
+    width: 20px;
+    height: 20px; }
+  .bullet-grey {
+    width: 40px;
+    height: 40px; } }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
@@ -1395,6 +1403,10 @@ body {
   .blog-entry {
     width: 45%;
     margin-bottom: 15px; }
+  .subscribe {
+    text-align: justify; }
+  .subscribe p {
+    font-size: 0.6875rem; }
   .yorkshire,
   .sears {
     display: none; }

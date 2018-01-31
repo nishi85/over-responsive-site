@@ -88,6 +88,21 @@ body {
     .video-text{
         width: 74%;
     }
+
+     .testimonial-bullets {
+    width: 25%;
+    }
+
+    .testimonial-bullet {
+    width: 20px;
+    height: 20px;
+    }
+
+    .bullet-grey {
+    width: 40px;
+    height: 40px;
+}
+
 }
 
 /* Landscape phone to portrait tablet */
@@ -464,6 +479,13 @@ body {
         margin-bottom: 15px;
     }
 
+    .subscribe {
+        text-align: justify;
+    }
+
+    .subscribe p {
+    @include remCalc(11);
+    }
 
     .yorkshire,
     .sears {
