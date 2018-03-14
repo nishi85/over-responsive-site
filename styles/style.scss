@@ -14,6 +14,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 @import "components/slider";
 @import "components/main";
 
+
 @font-face { font-family: PressStyle; src: url('PressStyle.woff');
 } 
 
@@ -461,6 +462,10 @@ body {
     height: 10px;
     }
 
+    .testimonials h2 {
+    @include remCalc(24);
+}
+
     .bullet-grey {
     width: 20px;
     height: 20px;
@@ -468,7 +473,42 @@ body {
 
     .video-text {
     width: 70%;
+    justify-content: center;
     }
+
+
+.video-text h2 {
+    font-family: PressStyle;
+    color:  #ffffff;
+    @include remCalc(40);
+    text-transform: uppercase;
+    width: 35.9243%;
+    margin: 0;
+}
+
+.video-text h2:nth-child(2) {
+    width: 29.6218%;
+}
+
+.video-text-img {
+    width: 15.4705%;
+    display: flex;
+    align-items: center;
+
+    img {
+    width: 100%;
+    display: block;
+    }
+}
+
+.video-text h3 {
+    color:  #ffffff;
+    @include remCalc(14);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin:0 auto;
+}
 
     .blog-gallery {
         flex-wrap: wrap;
@@ -506,3 +546,4 @@ body {
     }
 
 }
+

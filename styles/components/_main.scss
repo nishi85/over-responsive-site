@@ -462,10 +462,10 @@
 }
 
 .video-text {
-    width: 49.5833%;
+    width: 65%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: baseline;
 }
 
@@ -494,7 +494,7 @@
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 3px;
-    margin-top: 0;
+    margin:0 auto;
 }
 
 // BLOG
